@@ -17,6 +17,9 @@ class checkValidMove {
     
 
     class func checkIfValid(loc: Int, moves: [Bool]) -> Bool {
+        if (moves[loc-1] == true){
+            return false;
+        }
         if (loc >= 37){
             return true;
         }

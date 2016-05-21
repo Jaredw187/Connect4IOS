@@ -326,7 +326,7 @@
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fmx-Z0-bWh"/>
                                 </connections>
                             </button>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Turn: Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waA-dh-bXR">
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 1's Turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waA-dh-bXR">
                                 <rect key="frame" x="73" y="28" width="175" height="70"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.68235294117647061" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>

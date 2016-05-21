@@ -58,13 +58,11 @@ class ViewController: UIViewController {
                 
                 // add play again option. upon click.. board is reset.
                 let playAgain = UIAlertAction(title: "Yes", style: UIAlertActionStyle.Default) {
-                    UIAlertAction in
-                    self.resetBoard();
+                    UIAlertAction in self.resetBoard();
                 }
                 // add quit option. user is taken to home screen upon click.
                 let quit = UIAlertAction(title: "No ", style: UIAlertActionStyle.Cancel) {
-                    UIAlertAction in self.performSegueWithIdentifier("startPage", sender: self);
-                    print ("user quit");
+                    action in self.dismissViewControllerAnimated(true, completion:nil);
                 }                
                 // add the actions to the view.
                 alertController.addAction(quit);

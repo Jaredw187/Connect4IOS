@@ -428,10 +428,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" fixedFrame="YES" text="Player 1's Turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cj7-Ni-Yuv">
+                                <rect key="frame" x="205" y="25" width="180" height="33"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.68235294120000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0065649541879999997" green="0.002540653418" blue="0.002608066225" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" fixedFrame="YES" axis="vertical" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="PPM-Oc-rgm">
-                                <rect key="frame" x="132" y="66" width="83" height="521"/>
+                                <rect key="frame" x="174" y="66" width="83" height="521"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eE4-Bp-6LZ" userLabel="2">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eE4-Bp-6LZ" userLabel="2">
                                         <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
                                         <state key="normal" title="2" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -440,7 +447,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FPY-ci-Kna"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgI-Fd-YFf" userLabel="8">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgI-Fd-YFf" userLabel="8">
                                         <rect key="frame" x="0.0" y="73" width="83" height="83"/>
                                         <state key="normal" title="8" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -449,7 +456,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TwV-7U-hsM"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1Q-Y0-g35" userLabel="14">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1Q-Y0-g35" userLabel="14">
                                         <rect key="frame" x="0.0" y="146" width="83" height="83"/>
                                         <state key="normal" title="14" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -458,7 +465,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H33-A6-NX1"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1C-xD-F4J" userLabel="20">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1C-xD-F4J" userLabel="20">
                                         <rect key="frame" x="0.0" y="219" width="83" height="83"/>
                                         <state key="normal" title="20" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -467,7 +474,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IzR-wb-wM5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkb-Sd-GLd" userLabel="26">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkb-Sd-GLd" userLabel="26">
                                         <rect key="frame" x="0.0" y="292" width="83" height="83"/>
                                         <state key="normal" title="26" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -476,7 +483,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n32-Ze-cVD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWI-dn-Zac" userLabel="32">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWI-dn-Zac" userLabel="32">
                                         <rect key="frame" x="0.0" y="365" width="83" height="83"/>
                                         <state key="normal" title="32" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -485,7 +492,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mE9-Wt-OV7"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmW-fL-zUY" userLabel="38">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmW-fL-zUY" userLabel="38">
                                         <rect key="frame" x="0.0" y="438" width="83" height="83"/>
                                         <state key="normal" title="38" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -497,9 +504,9 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" fixedFrame="YES" axis="vertical" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="WB6-gb-2WS">
-                                <rect key="frame" x="217" y="66" width="83" height="521"/>
+                                <rect key="frame" x="259" y="66" width="83" height="521"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngq-Z0-vOd" userLabel="3">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngq-Z0-vOd" userLabel="3">
                                         <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
                                         <state key="normal" title="3" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -508,7 +515,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rrZ-sC-erg"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMu-LQ-VJD" userLabel="9">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMu-LQ-VJD" userLabel="9">
                                         <rect key="frame" x="0.0" y="73" width="83" height="83"/>
                                         <state key="normal" title="9" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -517,7 +524,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hic-UY-fFb"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brb-bl-Tme" userLabel="15">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brb-bl-Tme" userLabel="15">
                                         <rect key="frame" x="0.0" y="146" width="83" height="83"/>
                                         <state key="normal" title="15" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -526,7 +533,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H2I-GF-hO5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzX-Z8-D2G" userLabel="21">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzX-Z8-D2G" userLabel="21">
                                         <rect key="frame" x="0.0" y="219" width="83" height="83"/>
                                         <state key="normal" title="21" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -535,7 +542,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cdi-7y-ua7"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58N-Pi-ja0" userLabel="27">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58N-Pi-ja0" userLabel="27">
                                         <rect key="frame" x="0.0" y="292" width="83" height="83"/>
                                         <state key="normal" title="27" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -544,7 +551,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cB4-OV-46e"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdp-L7-dKU" userLabel="33">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdp-L7-dKU" userLabel="33">
                                         <rect key="frame" x="0.0" y="365" width="83" height="83"/>
                                         <state key="normal" title="33" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -553,7 +560,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ih1-CD-DYf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf1-op-deh" userLabel="39">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf1-op-deh" userLabel="39">
                                         <rect key="frame" x="0.0" y="438" width="83" height="83"/>
                                         <state key="normal" title="39" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -565,9 +572,9 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" fixedFrame="YES" axis="vertical" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="w5m-v1-hDb">
-                                <rect key="frame" x="302" y="66" width="83" height="521"/>
+                                <rect key="frame" x="344" y="66" width="83" height="521"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJK-jn-1lk" userLabel="4">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJK-jn-1lk" userLabel="4">
                                         <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
                                         <state key="normal" title="4" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -576,7 +583,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CrO-KR-X1c"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbX-iD-lwz" userLabel="10">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbX-iD-lwz" userLabel="10">
                                         <rect key="frame" x="0.0" y="73" width="83" height="83"/>
                                         <state key="normal" title="10" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -585,7 +592,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yUa-vk-TOl"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWE-Aq-msb" userLabel="16">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWE-Aq-msb" userLabel="16">
                                         <rect key="frame" x="0.0" y="146" width="83" height="83"/>
                                         <state key="normal" title="16" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -594,7 +601,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fcO-QA-eLD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aU-6M-enr" userLabel="22">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aU-6M-enr" userLabel="22">
                                         <rect key="frame" x="0.0" y="219" width="83" height="83"/>
                                         <state key="normal" title="22" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -603,7 +610,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Gw-HC-ngv"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jR-UT-7yb" userLabel="28">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jR-UT-7yb" userLabel="28">
                                         <rect key="frame" x="0.0" y="292" width="83" height="83"/>
                                         <state key="normal" title="28" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -612,7 +619,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OUC-li-fNm"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="420-FU-gsU" userLabel="34">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="420-FU-gsU" userLabel="34">
                                         <rect key="frame" x="0.0" y="365" width="83" height="83"/>
                                         <state key="normal" title="34" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -621,7 +628,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VBr-LU-0H8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dlg-xj-j1T" userLabel="40">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dlg-xj-j1T" userLabel="40">
                                         <rect key="frame" x="0.0" y="438" width="83" height="83"/>
                                         <state key="normal" title="40" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -632,78 +639,10 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" fixedFrame="YES" axis="vertical" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="fbJ-Wq-zZ2">
-                                <rect key="frame" x="471" y="66" width="83" height="521"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEe-rV-a5B" userLabel="6">
-                                        <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
-                                        <state key="normal" title="6" backgroundImage="peiceblank.png">
-                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nt2-R3-cuU"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1D-Rn-ydG" userLabel="12">
-                                        <rect key="frame" x="0.0" y="73" width="83" height="83"/>
-                                        <state key="normal" title="12" backgroundImage="peiceblank.png">
-                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pVZ-sU-hdp"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t00-rJ-BmF" userLabel="18">
-                                        <rect key="frame" x="0.0" y="146" width="83" height="83"/>
-                                        <state key="normal" title="18" backgroundImage="peiceblank.png">
-                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkb-bE-pvG"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VpS-HO-7Rl" userLabel="24">
-                                        <rect key="frame" x="0.0" y="219" width="83" height="83"/>
-                                        <state key="normal" title="24" backgroundImage="peiceblank.png">
-                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bhm-E8-kXV"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceh-ng-yhH" userLabel="30">
-                                        <rect key="frame" x="0.0" y="292" width="83" height="83"/>
-                                        <state key="normal" title="30" backgroundImage="peiceblank.png">
-                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7my-RK-J2U"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfX-Ok-rU6" userLabel="36">
-                                        <rect key="frame" x="0.0" y="365" width="83" height="83"/>
-                                        <state key="normal" title="36" backgroundImage="peiceblank.png">
-                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKJ-t6-AD8"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAH-Ap-KLH" userLabel="42">
-                                        <rect key="frame" x="0.0" y="438" width="83" height="83"/>
-                                        <state key="normal" title="42" backgroundImage="peiceblank.png">
-                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ar-tl-FEx"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" fixedFrame="YES" axis="vertical" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-Uv-BFp">
-                                <rect key="frame" x="47" y="66" width="83" height="521"/>
+                                <rect key="frame" x="89" y="66" width="83" height="521"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI7-7R-Cg8">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI7-7R-Cg8">
                                         <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
                                         <state key="normal" title="1" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -712,7 +651,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bGD-GQ-No3"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRi-Ie-swK" userLabel="7">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRi-Ie-swK" userLabel="7">
                                         <rect key="frame" x="0.0" y="73" width="83" height="83"/>
                                         <state key="normal" title="7" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -721,7 +660,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvV-HE-9pM"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qf-TG-PdH" userLabel="13">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qf-TG-PdH" userLabel="13">
                                         <rect key="frame" x="0.0" y="146" width="83" height="83"/>
                                         <state key="normal" title="13" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -730,7 +669,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hKe-Qf-HhX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIN-nH-vj4" userLabel="19">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIN-nH-vj4" userLabel="19">
                                         <rect key="frame" x="0.0" y="219" width="83" height="83"/>
                                         <state key="normal" title="19" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -739,7 +678,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V3P-rn-2O7"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9S3-VM-4rY" userLabel="25">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9S3-VM-4rY" userLabel="25">
                                         <rect key="frame" x="0.0" y="292" width="83" height="83"/>
                                         <state key="normal" title="25" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -748,7 +687,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X9F-cd-JyE"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbI-cE-2Tf" userLabel="31">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbI-cE-2Tf" userLabel="31">
                                         <rect key="frame" x="0.0" y="365" width="83" height="83"/>
                                         <state key="normal" title="31" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -757,7 +696,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jnr-an-GNu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcb-7X-AyF" userLabel="37">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcb-7X-AyF" userLabel="37">
                                         <rect key="frame" x="0.0" y="438" width="83" height="83"/>
                                         <state key="normal" title="37" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -769,9 +708,9 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" fixedFrame="YES" axis="vertical" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="lFG-gz-TGX">
-                                <rect key="frame" x="386" y="66" width="83" height="521"/>
+                                <rect key="frame" x="428" y="66" width="83" height="521"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAg-tD-ILw" userLabel="5">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAg-tD-ILw" userLabel="5">
                                         <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
                                         <state key="normal" title="5" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -780,7 +719,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yyd-wf-4OL"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POC-ie-JC0" userLabel="11">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POC-ie-JC0" userLabel="11">
                                         <rect key="frame" x="0.0" y="73" width="83" height="83"/>
                                         <state key="normal" title="11" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -789,7 +728,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dph-a0-b1u"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcy-O9-RM0" userLabel="17">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcy-O9-RM0" userLabel="17">
                                         <rect key="frame" x="0.0" y="146" width="83" height="83"/>
                                         <state key="normal" title="17" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -798,7 +737,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kh8-bQ-vcM"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkr-jH-XBu" userLabel="23">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkr-jH-XBu" userLabel="23">
                                         <rect key="frame" x="0.0" y="219" width="83" height="83"/>
                                         <state key="normal" title="23" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -807,7 +746,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyM-9x-YZi"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOB-7x-OYs" userLabel="29">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOB-7x-OYs" userLabel="29">
                                         <rect key="frame" x="0.0" y="292" width="83" height="83"/>
                                         <state key="normal" title="29" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -816,7 +755,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w52-Wx-Ewo"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0r9-VF-1ev" userLabel="35">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0r9-VF-1ev" userLabel="35">
                                         <rect key="frame" x="0.0" y="365" width="83" height="83"/>
                                         <state key="normal" title="35" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -825,7 +764,7 @@
                                             <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5dk-ua-P28"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVJ-dx-SIQ" userLabel="41">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVJ-dx-SIQ" userLabel="41">
                                         <rect key="frame" x="0.0" y="438" width="83" height="83"/>
                                         <state key="normal" title="41" backgroundImage="peiceblank.png">
                                             <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -836,20 +775,13 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" fixedFrame="YES" text="Player 1's Turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cj7-Ni-Yuv">
-                                <rect key="frame" x="205" y="25" width="180" height="33"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.68235294120000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.0065649541879999997" green="0.002540653418" blue="0.002608066225" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cr0-jP-bef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1350" y="281"/>
+            <point key="canvasLocation" x="1272" y="338"/>
         </scene>
         <!--StartPage-->
         <scene sceneID="LAI-jy-tFn">

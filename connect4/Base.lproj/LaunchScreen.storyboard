@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,24 +18,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" image="boardc4.png" translatesAutoresizingMaskIntoConstraints="NO" id="3ub-N8-INA">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="boardc4.png" translatesAutoresizingMaskIntoConstraints="NO" id="3ub-N8-INA">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CONNECT 4" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GlF-OL-xP1">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CONNECT 4" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GlF-OL-xP1">
                                 <rect key="frame" x="57" y="189" width="207" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Copyright (c) 2016 Jared Walton. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWe-uY-23H">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2016 Jared Walton. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWe-uY-23H">
                                 <rect key="frame" x="20" y="366" width="280" height="55"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="0Ax-uB-GIN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3ub-N8-INA" firstAttribute="centerX" secondItem="LWe-uY-23H" secondAttribute="centerX" id="00z-yN-R84"/>
+                            <constraint firstItem="3ub-N8-INA" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="7ja-OE-Rd3"/>
+                            <constraint firstItem="3ub-N8-INA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="9Bg-ze-GXf"/>
+                            <constraint firstItem="GlF-OL-xP1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="41" id="DbF-JP-I3J"/>
+                            <constraint firstItem="GlF-OL-xP1" firstAttribute="centerX" secondItem="LWe-uY-23H" secondAttribute="centerX" id="JnC-ZL-YEB"/>
+                            <constraint firstItem="GlF-OL-xP1" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="169" id="QJo-BW-qIo"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="LWe-uY-23H" secondAttribute="bottom" constant="59" id="RHR-h0-WRK"/>
+                            <constraint firstAttribute="trailing" secondItem="3ub-N8-INA" secondAttribute="trailing" id="Ypo-vl-1FT"/>
+                            <constraint firstItem="3ub-N8-INA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ifg-J6-cbh"/>
+                            <constraint firstItem="LWe-uY-23H" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="4" id="x5F-VV-w8P"/>
+                        </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="480"/>

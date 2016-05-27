@@ -11,7 +11,7 @@ import Foundation
 
 class checkWinner {
     
-    class func checkWinner(moves: [Bool], p1moves: [Bool], p2moves: [Bool], loc: Int) -> Bool{
+    class func checkWinner(p1moves: [Bool], p2moves: [Bool], loc: Int) -> Bool{
         //  ____________________
         //  |1  2  3  4  5  6  |1
         //  |7  8  9  10 11 12 |2
@@ -64,10 +64,72 @@ class checkWinner {
         
         /* check the diagonals */
         
+        /* a diagonal win must include atleast one move on the middle line */
+        if(checkDiagonals(p1moves) || checkDiagonals(p2moves)){ return true; }
         
-        
-        
-        
+        return false;
+    }
+    class func checkDiagonals(moves: [Bool]) -> Bool {
+        if (moves[18] == true){
+            
+            /* checking ' / ' diagonal */
+            if (moves[03] == true && moves[08] == true  && moves[13] == true){ return true; }
+            
+            /* checking ' \ ' diagonal */
+            if (moves[25] == true && moves[32] == true  && moves[39] == true){ return true; }
+        }
+        if (moves[19] == true){
+            
+            /* checking ' / ' diagonal */
+            if (moves[04] == true && moves[09] == true  && moves[14] == true){ return true; }
+            if (moves[09] == true && moves[14] == true  && moves[24] == true){ return true; }
+            
+            /* checking ' \ ' diagonal */
+            if (moves[12] == true && moves[26] == true  && moves[33] == true){ return true; }
+            if (moves[26] == true && moves[33] == true  && moves[40] == true){ return true; }
+        }
+        if (moves[20] == true){
+            
+            /* checking ' / ' diagonal */
+            if (moves[05] == true && moves[10] == true  && moves[15] == true){ return true; }
+            if (moves[10] == true && moves[15] == true  && moves[25] == true){ return true; }
+            if (moves[15] == true && moves[25] == true  && moves[30] == true){ return true; }
+            
+            /* checking ' \ ' diagonal */
+            if (moves[06] == true && moves[13] == true  && moves[27] == true){ return true; }
+            if (moves[13] == true && moves[27] == true  && moves[34] == true){ return true; }
+            if (moves[27] == true && moves[24] == true  && moves[41] == true){ return true; }
+        }
+        if (moves[21] == true){
+            
+            /* checking ' / ' diagonal */
+            if (moves[11] == true && moves[16] == true  && moves[26] == true){ return true; }
+            if (moves[16] == true && moves[26] == true  && moves[31] == true){ return true; }
+            if (moves[26] == true && moves[31] == true  && moves[36] == true){ return true; }
+            
+            /* checking ' \ ' diagonal */
+            if (moves[00] == true && moves[07] == true  && moves[14] == true){ return true; }
+            if (moves[07] == true && moves[14] == true  && moves[28] == true){ return true; }
+            if (moves[14] == true && moves[28] == true  && moves[35] == true){ return true; }
+        }
+        if (moves[22] == true){
+            
+            /* checking ' / ' diagonal */
+            if (moves[17] == true && moves[27] == true  && moves[32] == true){ return true; }
+            if (moves[27] == true && moves[32] == true  && moves[37] == true){ return true; }
+            
+            /* checking ' \ ' diagonal */
+            if (moves[01] == true && moves[08] == true  && moves[15] == true){ return true; }
+            if (moves[08] == true && moves[15] == true  && moves[29] == true){ return true; }
+        }
+        if (moves[23] == true){
+            
+            /* checking ' / ' diagonal */
+            if (moves[28] == true && moves[33] == true  && moves[37] == true){ return true; }
+            
+            /* checking ' \ ' diagonal */
+            if (moves[02] == true && moves[09] == true  && moves[16] == true){ return true; }
+        }
         return false;
     }
 }

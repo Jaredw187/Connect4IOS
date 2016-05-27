@@ -11,7 +11,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var playerTurn = 1;
+    var currentPlayer = 1;
     var image = UIImage(named: "peice.png") as UIImage? // declare image as the default board image.
     var moves =   [Bool](count: 42, repeatedValue: false); // arrays to store the moves :)
     var p1moves = [Bool](count: 42, repeatedValue: false);
@@ -40,20 +40,20 @@ class ViewController: UIViewController {
             moves[loc! - 1] = true;
             
             // change the background of the button to mirror that of the players peice.
-            if (playerTurn == 1){ image = UIImage(named: "peice3.png") as UIImage?;}
+            if (currentPlayer == 1){ image = UIImage(named: "peice3.png") as UIImage?;}
             else { image = UIImage(named: "peice2.png") as UIImage?;}
             (sender as! UIButton).setBackgroundImage(image, forState: UIControlState.Normal)
             
-            if (playerTurn == 1) { p1moves[loc! - 1] = true; }
+            if (currentPlayer == 1) { p1moves[loc! - 1] = true; }
             else                 { p2moves[loc! - 1] = true; }
 
             
             // check if winner. if so.. update the label and throw an alert.
-            if(checkWinner.checkWinner(moves, p1moves: p1moves, p2moves: p2moves, loc: loc!) == true){
+            if(checkWinner.checkWinner(p1moves, p2moves: p2moves, loc: loc!) == true){
                 changeLabel(2);
                 
                 //define an alert.
-                let alertController = UIAlertController(title: "Player " + String(playerTurn) + " Wins!",
+                let alertController = UIAlertController(title: "Player " + String(currentPlayer) + " Wins!",
                                                         message:"Play again?", preferredStyle: UIAlertControllerStyle.Alert)
                 
                 // add play again option. upon click.. board is reset.
@@ -73,14 +73,11 @@ class ViewController: UIViewController {
             }
             else{
                 // switch player turn and mark their moves in the array.
-                if (playerTurn == 1) { p1moves[loc! - 1] = true; playerTurn = 2; }
-                else                 { p2moves[loc! - 1] = true; playerTurn = 1; }
+                if (currentPlayer == 1) { p1moves[loc! - 1] = true; currentPlayer = 2; }
+                else                    { p2moves[loc! - 1] = true; currentPlayer = 1; }
                 changeLabel(1);
             }
-            print(moves);
-            print(p1moves);
-            print(p2moves);
-        }
+          }
     }
     
     // change the label.
@@ -89,11 +86,11 @@ class ViewController: UIViewController {
         
         // update the label to notify the current player.
         if (option == 1){
-            self.infoLabel.text = "Player " + String(playerTurn) + "'s Turn";
+            self.infoLabel.text = "Player " + String(currentPlayer) + "'s Turn";
         }
         // update the label to nofify winner.
         if (option == 2){
-            self.infoLabel.text = "Player " + String(playerTurn) + " Wins";
+            self.infoLabel.text = "Player " + String(currentPlayer) + " Wins";
         }
         else{ /*do nothing.*/}
     }

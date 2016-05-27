@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller 2-->
@@ -17,11 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boardc4.png" translatesAutoresizingMaskIntoConstraints="NO" id="3fB-fA-Zwp">
-                                <rect key="frame" x="10" y="118" width="300" height="300"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyQ-lF-yDD">
-                                <rect key="frame" x="31" y="131" width="40" height="40"/>
+                                <rect key="frame" x="23" y="136" width="50" height="50"/>
                                 <state key="normal" title="1" backgroundImage="peiceblank.png">
                                     <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -30,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrg-Q7-bJ6" userLabel="2">
-                                <rect key="frame" x="76" y="131" width="40" height="40"/>
+                                <rect key="frame" x="68" y="136" width="50" height="50"/>
                                 <state key="normal" title="2" backgroundImage="peiceblank.png">
                                     <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -39,7 +37,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLu-u5-l77" userLabel="3">
-                                <rect key="frame" x="120" y="131" width="40" height="40"/>
+                                <rect key="frame" x="114" y="136" width="50" height="50"/>
                                 <state key="normal" title="3" backgroundImage="peiceblank.png">
                                     <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -48,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUv-i4-Ck5" userLabel="4">
-                                <rect key="frame" x="165" y="131" width="40" height="40"/>
+                                <rect key="frame" x="159" y="136" width="50" height="50"/>
                                 <state key="normal" title="4" backgroundImage="peiceblank.png">
                                     <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -57,7 +55,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDB-fn-Dry" userLabel="5">
-                                <rect key="frame" x="209" y="131" width="40" height="40"/>
+                                <rect key="frame" x="203" y="136" width="50" height="50"/>
                                 <state key="normal" title="5" backgroundImage="peiceblank.png">
                                     <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -66,7 +64,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWg-Ar-hpF" userLabel="6">
-                                <rect key="frame" x="249" y="131" width="40" height="40"/>
+                                <rect key="frame" x="247" y="136" width="50" height="50"/>
                                 <state key="normal" title="6" backgroundImage="peiceblank.png">
                                     <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
@@ -75,277 +73,783 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxJ-td-nky" userLabel="7">
-                                <rect key="frame" x="31" y="170" width="40" height="40"/>
-                                <state key="normal" title="7" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="23" y="179" width="50" height="50"/>
+                                <state key="normal" title="7" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgV-sO-fWN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqs-yw-8MB" userLabel="8">
-                                <rect key="frame" x="76" y="170" width="40" height="40"/>
-                                <state key="normal" title="8" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="68" y="179" width="50" height="50"/>
+                                <state key="normal" title="8" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ckv-HM-WLm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTZ-0C-sqm" userLabel="9">
-                                <rect key="frame" x="120" y="170" width="40" height="40"/>
-                                <state key="normal" title="9" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="114" y="179" width="50" height="50"/>
+                                <state key="normal" title="9" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="blv-qT-xGM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHn-iu-Mya" userLabel="10">
-                                <rect key="frame" x="165" y="170" width="40" height="40"/>
-                                <state key="normal" title="10" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="159" y="179" width="50" height="50"/>
+                                <state key="normal" title="10" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bRB-UQ-Msd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eys-1O-g0j" userLabel="11">
-                                <rect key="frame" x="209" y="170" width="40" height="40"/>
-                                <state key="normal" title="11" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="203" y="179" width="50" height="50"/>
+                                <state key="normal" title="11" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uHg-uL-vWY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57p-l1-XgD" userLabel="12">
-                                <rect key="frame" x="249" y="170" width="40" height="40"/>
-                                <state key="normal" title="12" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="247" y="179" width="50" height="50"/>
+                                <state key="normal" title="12" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e1u-J3-C54"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzp-DF-Pku" userLabel="13">
-                                <rect key="frame" x="31" y="210" width="40" height="40"/>
-                                <state key="normal" title="13" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="23" y="222" width="50" height="50"/>
+                                <state key="normal" title="13" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LFF-yS-8vB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqP-5n-PRN" userLabel="14">
-                                <rect key="frame" x="76" y="210" width="40" height="40"/>
-                                <state key="normal" title="14" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="68" y="222" width="50" height="50"/>
+                                <state key="normal" title="14" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Edx-Fg-kQS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETj-OD-x7Q" userLabel="15">
-                                <rect key="frame" x="120" y="210" width="40" height="40"/>
-                                <state key="normal" title="15" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="114" y="222" width="50" height="50"/>
+                                <state key="normal" title="15" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4m7-Pw-vtl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clN-4Y-hhP" userLabel="16">
-                                <rect key="frame" x="165" y="210" width="40" height="40"/>
-                                <state key="normal" title="16" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="159" y="222" width="50" height="50"/>
+                                <state key="normal" title="16" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FOm-1j-GIl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWe-mv-9O9" userLabel="17">
-                                <rect key="frame" x="209" y="210" width="40" height="40"/>
-                                <state key="normal" title="17" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="203" y="222" width="50" height="50"/>
+                                <state key="normal" title="17" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qj9-3R-I8A"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0G-dD-A9h" userLabel="18">
-                                <rect key="frame" x="249" y="210" width="40" height="40"/>
-                                <state key="normal" title="18" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="247" y="222" width="50" height="50"/>
+                                <state key="normal" title="18" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KTh-Ge-nTJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tX7-bV-ylv" userLabel="19">
-                                <rect key="frame" x="31" y="249" width="40" height="40"/>
-                                <state key="normal" title="19" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="23" y="265" width="50" height="50"/>
+                                <state key="normal" title="19" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Lh-cL-hUq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APL-mc-xf7" userLabel="20">
-                                <rect key="frame" x="76" y="249" width="40" height="40"/>
-                                <state key="normal" title="20" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="68" y="265" width="50" height="50"/>
+                                <state key="normal" title="20" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gJL-ub-FUw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfB-wk-N2e" userLabel="21">
-                                <rect key="frame" x="120" y="249" width="40" height="40"/>
-                                <state key="normal" title="21" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="114" y="265" width="50" height="50"/>
+                                <state key="normal" title="21" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oW0-b4-bVz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jpl-rV-Hls" userLabel="22">
-                                <rect key="frame" x="165" y="249" width="40" height="40"/>
-                                <state key="normal" title="22" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="159" y="265" width="50" height="50"/>
+                                <state key="normal" title="22" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LSM-1k-cpH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yg-LH-Tqu" userLabel="23">
-                                <rect key="frame" x="209" y="249" width="40" height="40"/>
-                                <state key="normal" title="23" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="203" y="265" width="50" height="50"/>
+                                <state key="normal" title="23" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sh4-2i-b0y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbT-hl-sdr" userLabel="24">
-                                <rect key="frame" x="249" y="249" width="40" height="40"/>
-                                <state key="normal" title="24" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="247" y="265" width="50" height="50"/>
+                                <state key="normal" title="24" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iRO-pZ-DMS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebu-Ty-ckO" userLabel="25">
-                                <rect key="frame" x="31" y="288" width="40" height="40"/>
-                                <state key="normal" title="25" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="23" y="308" width="50" height="50"/>
+                                <state key="normal" title="25" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yRg-JE-3wv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Fg-Fa-m5g" userLabel="26">
-                                <rect key="frame" x="76" y="288" width="40" height="40"/>
-                                <state key="normal" title="26" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="68" y="308" width="50" height="50"/>
+                                <state key="normal" title="26" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QcK-Ei-Hx0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtn-Cs-JsY" userLabel="27">
-                                <rect key="frame" x="120" y="288" width="40" height="40"/>
-                                <state key="normal" title="27" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="114" y="308" width="50" height="50"/>
+                                <state key="normal" title="27" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j1C-kw-6oL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2K-Q5-2Vf" userLabel="28">
-                                <rect key="frame" x="165" y="288" width="40" height="40"/>
-                                <state key="normal" title="28" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="159" y="308" width="50" height="50"/>
+                                <state key="normal" title="28" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="69U-ZN-qJj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtR-tE-ElN" userLabel="29">
-                                <rect key="frame" x="209" y="288" width="40" height="40"/>
-                                <state key="normal" title="29" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="203" y="308" width="50" height="50"/>
+                                <state key="normal" title="29" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ULc-HB-WMx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3B-bU-Q8r" userLabel="30">
-                                <rect key="frame" x="249" y="288" width="40" height="40"/>
-                                <state key="normal" title="30" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="247" y="308" width="50" height="50"/>
+                                <state key="normal" title="30" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iP7-TE-6i9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdM-Ph-3Bi" userLabel="31">
-                                <rect key="frame" x="31" y="328" width="40" height="40"/>
-                                <state key="normal" title="31" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="23" y="351" width="50" height="50"/>
+                                <state key="normal" title="31" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TE2-yj-ldG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obb-jG-J7x" userLabel="32">
-                                <rect key="frame" x="76" y="328" width="40" height="40"/>
-                                <state key="normal" title="32" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="68" y="351" width="50" height="50"/>
+                                <state key="normal" title="32" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AcA-fr-dfW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwn-dg-g0p" userLabel="33">
-                                <rect key="frame" x="120" y="328" width="40" height="40"/>
-                                <state key="normal" title="33" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="114" y="351" width="50" height="50"/>
+                                <state key="normal" title="33" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Db-1J-Duw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BO-yl-kfX" userLabel="34">
-                                <rect key="frame" x="165" y="328" width="40" height="40"/>
-                                <state key="normal" title="34" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="159" y="351" width="50" height="50"/>
+                                <state key="normal" title="34" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxF-sY-6DZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9l-lb-dQF" userLabel="35">
-                                <rect key="frame" x="209" y="328" width="40" height="40"/>
-                                <state key="normal" title="35" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="203" y="351" width="50" height="50"/>
+                                <state key="normal" title="35" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Njx-mr-qSk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYY-Wp-BAK" userLabel="36">
-                                <rect key="frame" x="249" y="328" width="40" height="40"/>
-                                <state key="normal" title="36" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="247" y="351" width="50" height="50"/>
+                                <state key="normal" title="36" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pPR-D1-DcR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rK-tA-WrM" userLabel="37">
-                                <rect key="frame" x="31" y="368" width="40" height="40"/>
-                                <state key="normal" title="37" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="23" y="394" width="50" height="50"/>
+                                <state key="normal" title="37" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3tJ-q3-Bns"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3Z-Qi-JCC" userLabel="38">
-                                <rect key="frame" x="76" y="368" width="40" height="40"/>
-                                <state key="normal" title="38" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="68" y="394" width="50" height="50"/>
+                                <state key="normal" title="38" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLK-dN-XwU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLE-k9-u71" userLabel="39">
-                                <rect key="frame" x="120" y="368" width="40" height="40"/>
-                                <state key="normal" title="39" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="114" y="394" width="50" height="50"/>
+                                <state key="normal" title="39" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z9y-MM-o9p"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0Z-fy-RHB" userLabel="40">
-                                <rect key="frame" x="165" y="368" width="40" height="40"/>
-                                <state key="normal" title="40" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="159" y="394" width="50" height="50"/>
+                                <state key="normal" title="40" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ceZ-4l-Jjy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pm-Cy-mam" userLabel="41">
-                                <rect key="frame" x="209" y="368" width="40" height="40"/>
-                                <state key="normal" title="41" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="203" y="394" width="50" height="50"/>
+                                <state key="normal" title="41" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CvV-vN-0EA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwE-6g-mEm" userLabel="42">
-                                <rect key="frame" x="249" y="368" width="40" height="40"/>
-                                <state key="normal" title="42" backgroundImage="peiceblank.png"/>
+                                <rect key="frame" x="247" y="394" width="50" height="50"/>
+                                <state key="normal" title="42" backgroundImage="peiceblank.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fmx-Z0-bWh"/>
                                 </connections>
                             </button>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 1's Turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waA-dh-bXR">
-                                <rect key="frame" x="73" y="28" width="175" height="70"/>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="180" placeholderIntrinsicHeight="33" text="Player 1's Turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waA-dh-bXR">
+                                <rect key="frame" x="70" y="66" width="180" height="33"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.68235294117647061" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.0065649541884816864" green="0.0025406534182620772" blue="0.0026080662246800992" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="DUM-Rw-y4o"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="480"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="infoLabel" destination="waA-dh-bXR" id="54v-2B-ASw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943" y="326"/>
+            <point key="canvasLocation" x="768" y="256"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YH3-W1-3bE">
+            <objects>
+                <viewController id="dHe-SC-otX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1zS-nf-0PE"/>
+                        <viewControllerLayoutGuide type="bottom" id="rOB-L8-j87"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zDA-eZ-M1Z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" fixedFrame="YES" axis="vertical" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="PPM-Oc-rgm">
+                                <rect key="frame" x="132" y="66" width="83" height="521"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eE4-Bp-6LZ" userLabel="2">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                        <state key="normal" title="2" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FPY-ci-Kna"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgI-Fd-YFf" userLabel="8">
+                                        <rect key="frame" x="0.0" y="73" width="83" height="83"/>
+                                        <state key="normal" title="8" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TwV-7U-hsM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1Q-Y0-g35" userLabel="14">
+                                        <rect key="frame" x="0.0" y="146" width="83" height="83"/>
+                                        <state key="normal" title="14" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H33-A6-NX1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1C-xD-F4J" userLabel="20">
+                                        <rect key="frame" x="0.0" y="219" width="83" height="83"/>
+                                        <state key="normal" title="20" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IzR-wb-wM5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkb-Sd-GLd" userLabel="26">
+                                        <rect key="frame" x="0.0" y="292" width="83" height="83"/>
+                                        <state key="normal" title="26" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n32-Ze-cVD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWI-dn-Zac" userLabel="32">
+                                        <rect key="frame" x="0.0" y="365" width="83" height="83"/>
+                                        <state key="normal" title="32" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mE9-Wt-OV7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmW-fL-zUY" userLabel="38">
+                                        <rect key="frame" x="0.0" y="438" width="83" height="83"/>
+                                        <state key="normal" title="38" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="di3-pb-VjQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" fixedFrame="YES" axis="vertical" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="WB6-gb-2WS">
+                                <rect key="frame" x="217" y="66" width="83" height="521"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngq-Z0-vOd" userLabel="3">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                        <state key="normal" title="3" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rrZ-sC-erg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMu-LQ-VJD" userLabel="9">
+                                        <rect key="frame" x="0.0" y="73" width="83" height="83"/>
+                                        <state key="normal" title="9" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hic-UY-fFb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brb-bl-Tme" userLabel="15">
+                                        <rect key="frame" x="0.0" y="146" width="83" height="83"/>
+                                        <state key="normal" title="15" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H2I-GF-hO5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzX-Z8-D2G" userLabel="21">
+                                        <rect key="frame" x="0.0" y="219" width="83" height="83"/>
+                                        <state key="normal" title="21" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cdi-7y-ua7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58N-Pi-ja0" userLabel="27">
+                                        <rect key="frame" x="0.0" y="292" width="83" height="83"/>
+                                        <state key="normal" title="27" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cB4-OV-46e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdp-L7-dKU" userLabel="33">
+                                        <rect key="frame" x="0.0" y="365" width="83" height="83"/>
+                                        <state key="normal" title="33" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ih1-CD-DYf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf1-op-deh" userLabel="39">
+                                        <rect key="frame" x="0.0" y="438" width="83" height="83"/>
+                                        <state key="normal" title="39" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ipz-GT-PEa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" fixedFrame="YES" axis="vertical" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="w5m-v1-hDb">
+                                <rect key="frame" x="302" y="66" width="83" height="521"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJK-jn-1lk" userLabel="4">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                        <state key="normal" title="4" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CrO-KR-X1c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbX-iD-lwz" userLabel="10">
+                                        <rect key="frame" x="0.0" y="73" width="83" height="83"/>
+                                        <state key="normal" title="10" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yUa-vk-TOl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWE-Aq-msb" userLabel="16">
+                                        <rect key="frame" x="0.0" y="146" width="83" height="83"/>
+                                        <state key="normal" title="16" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fcO-QA-eLD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aU-6M-enr" userLabel="22">
+                                        <rect key="frame" x="0.0" y="219" width="83" height="83"/>
+                                        <state key="normal" title="22" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Gw-HC-ngv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jR-UT-7yb" userLabel="28">
+                                        <rect key="frame" x="0.0" y="292" width="83" height="83"/>
+                                        <state key="normal" title="28" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OUC-li-fNm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="420-FU-gsU" userLabel="34">
+                                        <rect key="frame" x="0.0" y="365" width="83" height="83"/>
+                                        <state key="normal" title="34" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VBr-LU-0H8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dlg-xj-j1T" userLabel="40">
+                                        <rect key="frame" x="0.0" y="438" width="83" height="83"/>
+                                        <state key="normal" title="40" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t9A-Yc-FEa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" fixedFrame="YES" axis="vertical" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="fbJ-Wq-zZ2">
+                                <rect key="frame" x="471" y="66" width="83" height="521"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEe-rV-a5B" userLabel="6">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                        <state key="normal" title="6" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nt2-R3-cuU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1D-Rn-ydG" userLabel="12">
+                                        <rect key="frame" x="0.0" y="73" width="83" height="83"/>
+                                        <state key="normal" title="12" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pVZ-sU-hdp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t00-rJ-BmF" userLabel="18">
+                                        <rect key="frame" x="0.0" y="146" width="83" height="83"/>
+                                        <state key="normal" title="18" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkb-bE-pvG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VpS-HO-7Rl" userLabel="24">
+                                        <rect key="frame" x="0.0" y="219" width="83" height="83"/>
+                                        <state key="normal" title="24" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bhm-E8-kXV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceh-ng-yhH" userLabel="30">
+                                        <rect key="frame" x="0.0" y="292" width="83" height="83"/>
+                                        <state key="normal" title="30" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7my-RK-J2U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfX-Ok-rU6" userLabel="36">
+                                        <rect key="frame" x="0.0" y="365" width="83" height="83"/>
+                                        <state key="normal" title="36" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKJ-t6-AD8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAH-Ap-KLH" userLabel="42">
+                                        <rect key="frame" x="0.0" y="438" width="83" height="83"/>
+                                        <state key="normal" title="42" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ar-tl-FEx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" fixedFrame="YES" axis="vertical" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="dbh-Uv-BFp">
+                                <rect key="frame" x="47" y="66" width="83" height="521"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI7-7R-Cg8">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                        <state key="normal" title="1" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bGD-GQ-No3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRi-Ie-swK" userLabel="7">
+                                        <rect key="frame" x="0.0" y="73" width="83" height="83"/>
+                                        <state key="normal" title="7" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvV-HE-9pM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qf-TG-PdH" userLabel="13">
+                                        <rect key="frame" x="0.0" y="146" width="83" height="83"/>
+                                        <state key="normal" title="13" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hKe-Qf-HhX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIN-nH-vj4" userLabel="19">
+                                        <rect key="frame" x="0.0" y="219" width="83" height="83"/>
+                                        <state key="normal" title="19" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V3P-rn-2O7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9S3-VM-4rY" userLabel="25">
+                                        <rect key="frame" x="0.0" y="292" width="83" height="83"/>
+                                        <state key="normal" title="25" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X9F-cd-JyE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbI-cE-2Tf" userLabel="31">
+                                        <rect key="frame" x="0.0" y="365" width="83" height="83"/>
+                                        <state key="normal" title="31" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jnr-an-GNu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcb-7X-AyF" userLabel="37">
+                                        <rect key="frame" x="0.0" y="438" width="83" height="83"/>
+                                        <state key="normal" title="37" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Oi-Nh-Xaa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" fixedFrame="YES" axis="vertical" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="lFG-gz-TGX">
+                                <rect key="frame" x="386" y="66" width="83" height="521"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAg-tD-ILw" userLabel="5">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
+                                        <state key="normal" title="5" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yyd-wf-4OL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POC-ie-JC0" userLabel="11">
+                                        <rect key="frame" x="0.0" y="73" width="83" height="83"/>
+                                        <state key="normal" title="11" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dph-a0-b1u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcy-O9-RM0" userLabel="17">
+                                        <rect key="frame" x="0.0" y="146" width="83" height="83"/>
+                                        <state key="normal" title="17" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kh8-bQ-vcM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkr-jH-XBu" userLabel="23">
+                                        <rect key="frame" x="0.0" y="219" width="83" height="83"/>
+                                        <state key="normal" title="23" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyM-9x-YZi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOB-7x-OYs" userLabel="29">
+                                        <rect key="frame" x="0.0" y="292" width="83" height="83"/>
+                                        <state key="normal" title="29" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w52-Wx-Ewo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0r9-VF-1ev" userLabel="35">
+                                        <rect key="frame" x="0.0" y="365" width="83" height="83"/>
+                                        <state key="normal" title="35" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5dk-ua-P28"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVJ-dx-SIQ" userLabel="41">
+                                        <rect key="frame" x="0.0" y="438" width="83" height="83"/>
+                                        <state key="normal" title="41" backgroundImage="peiceblank.png">
+                                            <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KRe-TV-kyI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" fixedFrame="YES" text="Player 1's Turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cj7-Ni-Yuv">
+                                <rect key="frame" x="205" y="25" width="180" height="33"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.68235294120000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0065649541879999997" green="0.002540653418" blue="0.002608066225" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cr0-jP-bef" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1350" y="281"/>
         </scene>
         <!--StartPage-->
         <scene sceneID="LAI-jy-tFn">
@@ -359,8 +863,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnJ-6n-vl3">
-                                <rect key="frame" x="62" y="241" width="206" height="99"/>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Connect 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0T-V6-wlA">
+                                <rect key="frame" x="62" y="95" width="197" height="46"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.68235294120000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.96078431372549022" green="0.0" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Bp8-7E-NQ3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0065649541879999997" green="0.002540653418" blue="0.002608066225" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnJ-6n-vl3">
+                                <rect key="frame" x="62" y="217" width="206" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="AwE-pw-uZs"/>
+                                </constraints>
                                 <state key="normal" title="Click to Play" image="peice.png">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -369,28 +887,26 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="aUy-im-bQZ"/>
                                 </connections>
                             </button>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Connect 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0T-V6-wlA">
-                                <rect key="frame" x="62" y="56" width="197" height="46"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.68235294120000001" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.96078431372549022" green="0.0" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0065649541879999997" green="0.002540653418" blue="0.002608066225" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E0T-V6-wlA" firstAttribute="centerX" secondItem="KLk-Ze-9PT" secondAttribute="centerX" id="EwN-Yn-Dcj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pnJ-6n-vl3" secondAttribute="trailing" constant="36" id="Qeo-EW-jLz"/>
+                            <constraint firstItem="E0T-V6-wlA" firstAttribute="top" secondItem="89m-bc-09r" secondAttribute="bottom" constant="36" id="Sz8-X9-P6F"/>
+                            <constraint firstItem="E0T-V6-wlA" firstAttribute="leading" secondItem="KLk-Ze-9PT" secondAttribute="leadingMargin" constant="46" id="VWo-jc-H7v"/>
+                            <constraint firstItem="E0T-V6-wlA" firstAttribute="leading" secondItem="pnJ-6n-vl3" secondAttribute="leading" id="kLM-2j-cuc"/>
+                            <constraint firstItem="L0r-sy-6IT" firstAttribute="top" secondItem="pnJ-6n-vl3" secondAttribute="bottom" constant="140" id="tVh-ai-ass"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="muG-nV-97w"/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="480"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VL9-W7-dZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="564" y="320"/>
+            <point key="canvasLocation" x="365" y="256"/>
         </scene>
     </scenes>
     <resources>
-        <image name="boardc4.png" width="606" height="606"/>
         <image name="peice.png" width="82" height="82"/>
         <image name="peiceblank.png" width="83" height="83"/>
     </resources>

@@ -98,7 +98,7 @@ class checkWinner {
             /* checking ' \ ' diagonal */
             if (moves[06] == true && moves[13] == true  && moves[27] == true){ return true; }
             if (moves[13] == true && moves[27] == true  && moves[34] == true){ return true; }
-            if (moves[27] == true && moves[24] == true  && moves[41] == true){ return true; }
+            if (moves[27] == true && moves[34] == true  && moves[41] == true){ return true; }  // <---
         }
         if (moves[21] == true){
             
@@ -125,7 +125,7 @@ class checkWinner {
         if (moves[23] == true){
             
             /* checking ' / ' diagonal */
-            if (moves[28] == true && moves[33] == true  && moves[37] == true){ return true; }
+            if (moves[28] == true && moves[33] == true  && moves[38] == true){ return true; }
             
             /* checking ' \ ' diagonal */
             if (moves[02] == true && moves[09] == true  && moves[16] == true){ return true; }
